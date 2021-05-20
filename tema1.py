@@ -8,9 +8,11 @@ print("Sortare descrescatoare: "+str(lista2))
 lista3 = lista1[0:len(lista1):2]
 print("Numere impare: "+str(lista3))
 print("Numere impare: "+str([pythonList[0],pythonList[2],pythonList[4],pythonList[5],pythonList[8]]))
+print("Numere impare: "+str(pythonList[0:5:2]+[pythonList[5]]+[pythonList[len(pythonList)-2]]))
 lista4 = lista1[1:len(lista1):2]
 print("Numere pare: "+str(lista4))
 print("Numere pare: "+str([pythonList[1],pythonList[3],pythonList[6],pythonList[7],pythonList[9]]))
+print("Numere pare: "+str(pythonList[1:4:2]+pythonList[6:8]+[pythonList[len(pythonList)-1]]))
 print("Multipli de 3: "+str([pythonList[2],pythonList[4],pythonList[9]]))
 
 #bonus lambda
