@@ -14,6 +14,8 @@ print("Numere pare: "+str([pythonList[1],pythonList[3],pythonList[6],pythonList[
 print("Multipli de 3: "+str([pythonList[2],pythonList[4],pythonList[9]]))
 
 #bonus lambda
+print("Sortare crescatoare: "+str(list(sorted(pythonList, key=lambda x: x))))
+print("Sortare descrescatoare: "+str(list(sorted(pythonList, key=lambda x: x, reverse=True))))
 print("Numere pare: "+str(list(filter(lambda x:x%2==0,pythonList))))
 print("Numere impare: "+str(list(filter(lambda x:x%2==1,pythonList))))
 print("Multipli de 3: "+str(list(filter(lambda x:x%3==0, pythonList))))
