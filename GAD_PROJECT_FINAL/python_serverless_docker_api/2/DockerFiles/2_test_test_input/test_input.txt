@@ -1,1 +1,1 @@
-12
+Aici am citit dintr-un fisier dat ca input.

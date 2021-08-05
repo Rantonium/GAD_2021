@@ -3,6 +3,9 @@
     <button id="button">
     Run Container
     </button>
+    <button id="button_no_input">
+    Run Container With No Inputs
+    </button>
     <br>
     <br>
     <h3 id="container"></h3>
@@ -19,6 +22,7 @@
                 <input type="radio" name="script" value="{{ file.file_name }}">
                 {{ file.file_name }}.{{ file.file_extension }}
             </label>
+            <br>
         {% endif %}
     {% endfor %}
     </ul>
@@ -32,6 +36,7 @@
                 <input type="radio" name="input" value="{{ file.file_name }}.{{ file.file_extension }}">
                 {{ file.file_name }}.{{ file.file_extension }}
             </label>
+            <br>
         {% endif %}
     {% endfor %}
     </ul>

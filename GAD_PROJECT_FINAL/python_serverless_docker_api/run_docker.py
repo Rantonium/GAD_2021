@@ -13,6 +13,9 @@ user_id = inputs[0]
 script_id = inputs[1]
 input_name = inputs[2]
 
+if input_name == "no_input":
+    input_name = "none.txt"
+
 docker_file_template = docker_file_template.replace("{script_full_name}", str(script_id) + ".py")
 docker_file_template = docker_file_template.replace("{script_name}", str(script_id) + ".py")
 docker_file_template = docker_file_template.replace("{script_input}", str(input_name))

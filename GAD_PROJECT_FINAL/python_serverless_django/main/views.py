@@ -1,20 +1,18 @@
 from os.path import basename
 
-from django.shortcuts import render
-from django.http import HttpResponse
-from .models import File
-from .forms import UploadFileForm
 from django.http import HttpResponseRedirect
+from django.shortcuts import render
 
+from .forms import UploadFileForm
+from .models import File
 
-# Create your views here.
 
 def index(response):
-    return render(response, "main/base.html", {"name": "testare"})
+    return render(response, "main/base.html", {"name": ""})
 
 
 def home(response):
-    return render(response, "main/home.html", {"name": "testare"})
+    return render(response, "main/home.html", {"name": "This is the homepage"})
 
 
 def my_files(response):
