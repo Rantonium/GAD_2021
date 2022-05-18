@@ -20,6 +20,8 @@ docker_file_template = docker_file_template.replace("{script_full_name}", str(sc
 docker_file_template = docker_file_template.replace("{script_name}", str(script_id) + ".py")
 docker_file_template = docker_file_template.replace("{script_input}", str(input_name))
 
+## !!!!! USE OS PATH JOIN !!!!!!!! INSTEAD OF CONCATENATION
+
 try:
     os.mkdir(os.getcwd() + "\\" + str(user_id) + "\\DockerFiles\\" + (str(user_id) + "_" + str(script_id) + "_" + str(input_name.split('.')[0])))
 except:
